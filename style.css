@@ -9,14 +9,42 @@
 .primary {
 	background-color: #f37a20;
 }
-#carousel-indicators{
-	margin-top: 3%;
+.carousel-caption {
+	background-color: black;
+	color: white;
+	top: 80%;
+	max-width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	opacity: 0.5;
+
 }
 
+
 .d-block {
+	margin-top: 3vh;
 	max-width: 90%; 
 	margin-left: auto;
 	margin-right: auto;
-	vertical-align: middle;
+}
+.social {
+	height: 60px;
+	cursor: pointer;
+}
+
+.github{
+	background-color: #000000;
 	
 }
+
+.social img {
+	height: 100%;
+}
+
+.headshot{
+	width: 200px; 
+	margin: 20px 20px 20px 10px;
+	border-radius: 100px;
+}
+
+

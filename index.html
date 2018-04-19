@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
-  <body class="primary">
+  <body class="success">
     
-    <nav class="navbar navbar-expand-lg navbar-dark secondary">
+    <nav class="navbar navbar-expand-lg navbar-dark primary">
   <a href="#" class="navbar-brand"><h1><strong>Austin Tsiaperas</strong></h1></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -24,25 +24,27 @@
         <a class="nav-link" href="#"><strong>About Me</strong><span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="contact.html"><strong>Contact</strong></a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="portfolio.html"><strong>Portfolio</strong></a>
       </li>
     </ul>
   </div>
 </nav>
     <div class="container">
-        <div class="row success" style="height: 75vh;">
-            <div class="col-12 text-white">
-                <img src="images/headshot.png" class="float-left" style="width: 200px; margin: 20px 20px 20px 10px;">
-            
+        <div class="row" style="height: 75vh;">
+            <div class="col-md-3 text-center">
+                <img src="images/headshot.png" class="headshot" />
+            </div>
+            <div class="col-md-9 text-white float-left">
                 <p style="margin: 20px;">
-                   Austin grew up in the suburbs of DC and has lived in Chicago since 2008. He is an avid collector of cats, with 3 currently in his apartment. There is nothing he loves more than an evening playing videogames with his ragdoll Ripley sitting on his lap. 
+                   I grew up in the suburbs of DC and have lived in Chicago since 2008. I am an avid collector of cats, with 3 currently in my apartment. There is nothing I love more than an evening playing videogames with my ragdoll Ripley sitting on my lap. 
                 </p>
         
                 <p style="margin: 20px;">
-                    Austin has scattered programming experience and learned to read by playing Eye of The Beholder and Reader Rabbit. He is particularly interested in data analysis, and is looking forward to learning Python.
+                   I started using computers before windows existed, and learned to read by playing Eye of The Beholder and Reader Rabbit. I have experience working in print production, translation, and the insurance industry. I have multiple years of experience using the Adobe Creative Suite and Microsoft Office Suite. 
+                </p>
+
+                <p style="margin: 20px">
+					I am looking for a position as a full-stack developer after completing a coding bootcamp at Northwestern University which focused on the MERN stack. In addition to MongoDb, Express, React, and Node, I have some previous experience with C++, Ruby, Rails, and Java. I am a quick study, and progressed from making simple websites like this one to fully interactive websites over the course of the program. I love learning, and am excited to work in a field that emphasizes constant personal growth.
                 </p>
             </div>
         </div>
@@ -53,26 +55,25 @@
     </div>
     
     <div class="container">
-<div class="fixed-bottom secondary">
-          <div class="row text-center" style="height: 90px;">
-            <div class="col-4" style="background-color: #000000;">
-                <a href="https://github.com/jtsiaperas">
-                <img src="images/github.svg" style="height: 100%;">
-                </a>
+  <div class="fixed-bottom secondary">
+          <div class="row text-center social">
+            <div onclick="window.open('https://github.com/jtsiaperas')";" class="col-4 github" >
+                
+                <img src="images/github.svg" />
+               
             </div>
-            <div class="col-4 secondary">
-                <a href="https://linkedin.com/in/j-austin-tsiaperas-9a210b11b/">
-                <img src="images/linked_in.svg" style="height: 100%;">
-                </a>
+            <div onclick="window.open('https://linkedin.com/in/j-austin-tsiaperas-9a210b11b/')" class="col-4 secondary">
+                
+                <img src="images/linked_in.svg" />
+              
             </div>
-            <div class="col-4 primary">
-                <a href="https://stackoverflow.com/users/8822632/austin-tsiaperas">
-                <img src="images/stack_overflow.svg" style="height: 100%;">
-                </a>
+            <div onclick="window.open('https://stackoverflow.com/users/8822632/austin-tsiaperas')" class="col-4 primary">
+               
+                <img src="images/stack_overflow.svg" />
+               
             </div>
           </div>
     </div>
-    </div>  
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
