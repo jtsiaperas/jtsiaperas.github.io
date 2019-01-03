@@ -10,39 +10,98 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
-  <body class="success">
+  <body id="page" class="success">
     
-    <nav class="navbar navbar-expand-lg navbar-dark primary">
-  <a href="#" class="navbar-brand"><h1><strong>Austin Tsiaperas</strong></h1></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <nav class="navbar navbar-expand-lg navbar-dark primary fixed-top">
+    <a href="#" class="navbar-brand"><h1><strong>Austin Tsiaperas</strong></h1></a>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#"><strong>About Me</strong><span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="portfolio.html"><strong>Portfolio</strong></a>
-      </li>
-    </ul>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#"><strong>About Me</strong><span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html"><strong>Portfolio</strong></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    
+  <div class="container">
+    <div class="row">
+        <div class="col-md-3 text-center">
+            <img src="images/headshot.png" class="headshot" />
+        </div>
+        
+        <div class="col-md-9 text-white float-left">
+            <p style="margin: 20px;">
+                Creative Full-Stack Developer with Back End focus. Avid follower of Agile principles, innovating through experimentation and iteration. Quick study with a knack for written language and mathematics, particularly linear algebra and numerical analysis. Passionate about solving complex problems with a SOLID and RESTful approach. Excellent at managing projects and leading teams through collaboration and inclusion. Lifelong learner who thrives when continually challenged.
+            </p>
+		        <p style="height: 60px"></p>
+        </div>
+        
+    </div>
   </div>
-</nav>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 text-center">
-                <img src="images/headshot.png" class="headshot" />
-            </div>
-            <div class="col-md-9 text-white float-left">
-                <p style="margin: 20px;">
-                  Creative Full-Stack Developer with Back End focus. Avid follower of Agile principles, innovating through experimentation and iteration. Quick study with a knack for written language and mathematics, particularly linear algebra and numerical analysis. Passionate about solving complex problems with a SOLID and RESTful approach. Excellent at managing projects and leading teams through collaboration and inclusion. Lifelong learner who thrives when continually challenged.
-                </p>
-		 <p style="height: 60px">
-			 </p>
-            </div>
+
+  <div class="container">
+    <div class="row">
+        <div class="col-12 portfolio">
+             <div class="portfolio-item">
+                  <img class="d-block" src="images/BFF.png" alt="Best Friend Finder">
+                  <div class="portfolio-caption" onclick="window.open('https://calm-mesa-52722.herokuapp.com/')">
+                      <h2><strong>Best Friend Finder</strong></h2>
+                  </div>
+                  <p class="portfolio-summary">
+                    A tool to find users with similar interests. Implemented using HTML, CSS, Express, and Node, and deployed on Heroku.
+                  </p>
+              </div>
+    
+              <div class="portfolio-item">
+                  <img class="d-block" src="images/BabbleOn.png" alt="Babble On web scraper">
+                  <div class="portfolio-caption" onclick="window.open('https://protected-springs-12247.herokuapp.com/')">
+                       <h2><strong>BabbleOn</strong></h2>
+                  </div>
+                  <p class="portfolio-summary">
+                    A web scraper with a public comment system. Implemented using HTML, CSS, MongoDB, Express, JQuery, Bootstrap, and Node, and deployed on Heroku.
+                  </p>
+              </div>
+    
+              <div class="portfolio-item">
+                  <img class="d-block" src="images/Represent.png" alt="Represent!">
+                  <div class="portfolio-caption" onclick="window.open('https://teampolitics.github.io/Represent/')">
+                      <h2><strong>Represent!</strong></h2>
+                  </div>
+                  <p class ="portfolio-summary">
+                    A tool to help users find every elected representative for their district. Implemented using HTML, CSS, Bootstrap, JQuery, and the Open Politics API. 
+                  </p>
+                </div>
+    
+              <div class="portfolio-item">
+                  <img class="d-block" src="images/memory.png" alt="Memory game">
+                  <div class="portfolio-caption" onclick="window.open('https://nameless-taiga-15536.herokuapp.com/')">
+                      <h2><strong>Memory</strong></h2>
+                  </div>
+                  <p class="portfolio-summary">An arboreal memory game. Implemented using HTML, CSS, React, and Bootstrap, and deployed on Heroku.</p>
+              </div>
+           
+              <div class="portfolio-item">
+                  <img class="d-block" src="images/nytScraper.png" alt ="NY Times web scraper">
+                  <div class="portfolio-caption" onclick="window.open('https://cryptic-dusk-81345.herokuapp.com/')">
+                      <h2><strong>NY Times Scraper</strong></h2>
+                  </div>
+                  <p class="portfolio-summary">A web scraper for NY Times articles. Implemented using HTML, CSS, MongoDB, Express, React, and Node, and deployed on Heroku</p>
+              </div>
+
+              
         </div>
     </div>
+          
+  </div>
+
 
     
     
@@ -72,5 +131,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src = "./app.js"></script>
   </body>
 </html>

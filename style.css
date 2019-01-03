@@ -13,7 +13,7 @@
 	background-color: #f37a20;
 }
 
-.carousel-caption {
+.portfolio-caption {
 	background-color: black;
 	color: white;
 	top: 80%;
@@ -29,7 +29,11 @@ p {
 }
 
 .navbar {
+	position: absolute;
+	top:0;
+	width:100vw;
 	margin-bottom: 80px;
+	z-index: 100000;
 }
 
 .d-block {
@@ -57,12 +61,24 @@ p {
 	width:60px;
 }
 
+body{
+	padding-top: 160px;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+
 .headshot{
 	width: 200px; 
 	margin: 20px 20px 20px 10px;
 	border-radius: 100px;
 }
-.container{ padding-bottom: 60px;}
+.container{ 
+	
+	padding-bottom: 60px;
+}
 
 @media (max-width: 768px)
 {
@@ -72,5 +88,50 @@ p {
 	h1{
 		font-size: 20px;
 	}
+}
+
+#tiles{
+	position:relative;
+}
+
+.triangle{
+	-webkit-mask-image:url(images/Asset\ 3.png);
+	mask-image:url(images/Asset\ 3.png);
+	mask-repeat: no-repeat;
+	-webkit-mask-repeat: no-repeat;
+	background-color:yellow;
+	height:200px;
+	width:200px;
+	float: left;
+	animation: 2s infinite ease rotate;
+}
+
+.triangle:nth-child(2n){
+	-webkit-mask-image:url(images/Asset\ 3flipped.png);
+	mask-image:url(images/Asset\ 3flipped.png);
+	background-color: blue;
+	position: relative;
+	left: -60px;
+	animation: 3s infinite ease rotate;
+}
+
+.triangle:nth-child(3n){
+	background-color: red;
+	animation: 5s infinite ease rotate;
+}
+
+@keyframes rotate{
+	to{
+		transform: rotate(360);
+		-webkit-transform: rotate(360);
+	}
+}
+
+.portfolio-caption{
+	text-align: center;
+}
+.portfolio-summary{
+	
+	margin: 5vh 20vw 5vh 20vw;
 }
 	
