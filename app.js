@@ -1,6 +1,6 @@
 var offsetY = 0;
 $(document).ready( function() {
-   alert("Page ready");
+  
     $("#page").on("wheel", function(event){
         console.log(event.originalEvent);
         if (offsetY == 0 || offsetY <=-20)
